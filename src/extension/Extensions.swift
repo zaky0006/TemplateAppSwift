@@ -52,3 +52,11 @@ extension UIView{
     }
 }
 
+extension UILabel{
+    convenience init(color:UIColor,font:UIFont){
+        self.init()
+        self.textColor = color
+        self.font = font;
+    }
+}
+

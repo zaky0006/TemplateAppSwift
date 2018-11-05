@@ -3,9 +3,9 @@
 
 target 'TemplateAppSwift' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-#  use_frameworks!
+  use_frameworks!
 
   # Pods for TemplateAppSwift
-#  pod 'Masonry'
-#    pod 'AFNetworking'
+    pod 'Masonry'
+    pod 'AFNetworking'
 end
