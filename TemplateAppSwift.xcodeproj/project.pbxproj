@@ -201,6 +201,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TemplateAppSwift/Pods-TemplateAppSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -208,6 +209,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

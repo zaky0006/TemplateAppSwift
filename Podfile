@@ -8,4 +8,5 @@ target 'TemplateAppSwift' do
   # Pods for TemplateAppSwift
     pod 'Masonry'
     pod 'AFNetworking'
+    pod 'Kingfisher'  #图片缓存
 end
