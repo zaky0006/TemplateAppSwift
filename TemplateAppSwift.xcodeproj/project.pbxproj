@@ -10,6 +10,7 @@
 		D91568140BBAEE4C638FE581 /* Pods_TemplateAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284ED42DDE5ADAFDAD85D03F /* Pods_TemplateAppSwift.framework */; };
 		DF158118218FDB42007C1673 /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF158117218FDB42007C1673 /* CoreManager.swift */; };
 		DF3168F42190588B0050F32E /* TAConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3168F32190588B0050F32E /* TAConstant.swift */; };
+		DF3168FC219067070050F32E /* TDAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3168FB219067070050F32E /* TDAsset.xcassets */; };
 		DF83A9E7218C270300F753CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83A9E6218C270300F753CB /* AppDelegate.swift */; };
 		DF83A9E9218C270300F753CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83A9E8218C270300F753CB /* ViewController.swift */; };
 		DF83A9EC218C270400F753CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF83A9EA218C270400F753CB /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		5001C51B1513A225E405CA8F /* Pods-TemplateAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateAppSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemplateAppSwift/Pods-TemplateAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		DF158117218FDB42007C1673 /* CoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreManager.swift; sourceTree = "<group>"; };
 		DF3168F32190588B0050F32E /* TAConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAConstant.swift; sourceTree = "<group>"; };
+		DF3168FB219067070050F32E /* TDAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TDAsset.xcassets; sourceTree = "<group>"; };
 		DF83A9E3218C270300F753CB /* TemplateAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF83A9E6218C270300F753CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF83A9E8218C270300F753CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				DF83A9F9218C270E00F753CB /* extension */,
+				DF3168FB219067070050F32E /* TDAsset.xcassets */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3168FC219067070050F32E /* TDAsset.xcassets in Resources */,
 				DF83A9F1218C270500F753CB /* LaunchScreen.storyboard in Resources */,
 				DF83A9EE218C270500F753CB /* Assets.xcassets in Resources */,
 				DF83A9EC218C270400F753CB /* Main.storyboard in Resources */,
