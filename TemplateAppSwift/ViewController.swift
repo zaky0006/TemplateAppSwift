@@ -21,6 +21,8 @@ class ViewController: UIViewController {
             make?.left.equalTo()(self.view.mas_centerX)?.offset()(20)
             make?.centerY.equalTo()(self.view)
         }
+        
+        
     }
 
     
