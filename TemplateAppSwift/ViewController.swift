@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Masonry
+import SnapKit
 
 class ViewController: UIViewController {
 
@@ -17,12 +17,9 @@ class ViewController: UIViewController {
         var label = UILabel.init(color: UIColor.blue, font: UIFont.systemFont(ofSize: 12))
         label.text = "this is a just label"
         self.view.addSubview(label)
-        label.mas_makeConstraints { (make:MASConstraintMaker?) in
-            make?.left.equalTo()(self.view.mas_centerX)?.offset()(20)
-            make?.centerY.equalTo()(self.view)
-        }
         
         
+        TANetwork.sharedInstance.getReq(urlSuffix: nil, headers: nil, parameters: nil)?.resume()
     }
 
     
