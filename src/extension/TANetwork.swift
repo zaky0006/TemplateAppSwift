@@ -8,6 +8,25 @@
 
 import UIKit
 
+struct getObject:Codable {
+    var url :String?
+    var origin :String?
+    //        var args :Array<String>?
+    var headers : HeaderDic?
+    //
+}
+struct HeaderDic:Codable {
+    var Accept :String?
+    var Connection:String?
+    var AcceptEncoding :String?
+    enum CodingKeys: String, CodingKey {
+        case AcceptEncoding = "Accept-Encoding"
+        case Accept
+        case Connection
+    }
+}
+
+
 class TANetwork: NSObject {
     static let sharedInstance = TANetwork()
     private override init() {
@@ -15,7 +34,7 @@ class TANetwork: NSObject {
     }
     var session = URLSession.init(configuration: .default)
     
-    
+    let size = CGSize(width: 100, height: 100)
 
     func getReq(urlSuffix:String?,
                 headers:Dictionary<String, Any>?,parameters:Dictionary<String, Any>?) -> URLSessionDataTask?{
@@ -35,14 +54,21 @@ class TANetwork: NSObject {
         // 创建一个网络任务
         let task = session.dataTask(with: UrlRequest) {(data, response, error) in
             do {
-                // 返回的是一个json，将返回的json转成字典r
+                
+                let jsonDecoder = JSONDecoder()
+                let modelObject = try? jsonDecoder.decode(getObject.self, from: data!)
+                print(modelObject)
+                
+                
+//                 返回的是一个json，将返回的json转成字典r
               let r = try JSONSerialization.jsonObject(with: data!, options: []) as! NSDictionary
-             //   let r =  String.init(data: data!, encoding: .utf8)
+                print("------------")
                 print(r)
             } catch {
                 // 如果连接失败就...
                 print("无法连接到服务器")
-\            }
+            }
+ 
         }
         
         return task
