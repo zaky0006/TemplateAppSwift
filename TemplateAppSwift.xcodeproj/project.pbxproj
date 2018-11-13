@@ -11,6 +11,7 @@
 		DF158118218FDB42007C1673 /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF158117218FDB42007C1673 /* CoreManager.swift */; };
 		DF3168F42190588B0050F32E /* TAConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3168F32190588B0050F32E /* TAConstant.swift */; };
 		DF3168FC219067070050F32E /* TDAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3168FB219067070050F32E /* TDAsset.xcassets */; };
+		DF3168FE21911F640050F32E /* TANetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3168FD21911F640050F32E /* TANetwork.swift */; };
 		DF83A9E7218C270300F753CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83A9E6218C270300F753CB /* AppDelegate.swift */; };
 		DF83A9E9218C270300F753CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83A9E8218C270300F753CB /* ViewController.swift */; };
 		DF83A9EC218C270400F753CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF83A9EA218C270400F753CB /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		DF158117218FDB42007C1673 /* CoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreManager.swift; sourceTree = "<group>"; };
 		DF3168F32190588B0050F32E /* TAConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAConstant.swift; sourceTree = "<group>"; };
 		DF3168FB219067070050F32E /* TDAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TDAsset.xcassets; sourceTree = "<group>"; };
+		DF3168FD21911F640050F32E /* TANetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TANetwork.swift; sourceTree = "<group>"; };
 		DF83A9E3218C270300F753CB /* TemplateAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF83A9E6218C270300F753CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF83A9E8218C270300F753CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				DF83A9FB218C270E00F753CB /* UIViewController+Extension.h */,
 				DF83A9FC218C270E00F753CB /* Extensions.swift */,
 				DF158117218FDB42007C1673 /* CoreManager.swift */,
+				DF3168FD21911F640050F32E /* TANetwork.swift */,
 				DF3168F32190588B0050F32E /* TAConstant.swift */,
 			);
 			path = extension;
@@ -250,6 +253,7 @@
 				DF83A9FD218C270E00F753CB /* UIViewController+Extension.m in Sources */,
 				DF83A9E9218C270300F753CB /* ViewController.swift in Sources */,
 				DF83A9E7218C270300F753CB /* AppDelegate.swift in Sources */,
+				DF3168FE21911F640050F32E /* TANetwork.swift in Sources */,
 				DF83A9FE218C270E00F753CB /* Extensions.swift in Sources */,
 				DF158118218FDB42007C1673 /* CoreManager.swift in Sources */,
 			);
