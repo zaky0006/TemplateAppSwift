@@ -6,7 +6,7 @@ target 'TemplateAppSwift' do
   use_frameworks!
 
   # Pods for TemplateAppSwift
-    pod 'Masonry'
+    pod 'SnapKit'
     pod 'AFNetworking'
     pod 'Kingfisher'  #图片缓存
 end

@@ -16,4 +16,8 @@ class CoreManager: NSObject {
     
     var userName:String?
     var passWord:String?
+    
+    
 }
+
+
