@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3878FA2021949141001ABE4C /* UIADScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3878FA1F21949141001ABE4C /* UIADScrollView.swift */; };
 		38F1AFF32195DCB400B0B7B1 /* TANetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1AFF22195DCB400B0B7B1 /* TANetwork.swift */; };
+		38F1AFF52199D6F800B0B7B1 /* UIAlertSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1AFF42199D6F800B0B7B1 /* UIAlertSheetView.swift */; };
 		D91568140BBAEE4C638FE581 /* Pods_TemplateAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284ED42DDE5ADAFDAD85D03F /* Pods_TemplateAppSwift.framework */; };
 		DF158118218FDB42007C1673 /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF158117218FDB42007C1673 /* CoreManager.swift */; };
 		DF3168F42190588B0050F32E /* TAConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3168F32190588B0050F32E /* TAConstant.swift */; };
@@ -26,6 +27,7 @@
 		284ED42DDE5ADAFDAD85D03F /* Pods_TemplateAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemplateAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3878FA1F21949141001ABE4C /* UIADScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIADScrollView.swift; sourceTree = "<group>"; };
 		38F1AFF22195DCB400B0B7B1 /* TANetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TANetwork.swift; sourceTree = "<group>"; };
+		38F1AFF42199D6F800B0B7B1 /* UIAlertSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertSheetView.swift; sourceTree = "<group>"; };
 		4721B436082F87F49A555B17 /* Pods-TemplateAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateAppSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TemplateAppSwift/Pods-TemplateAppSwift.release.xcconfig"; sourceTree = "<group>"; };
 		5001C51B1513A225E405CA8F /* Pods-TemplateAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateAppSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemplateAppSwift/Pods-TemplateAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		DF158117218FDB42007C1673 /* CoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreManager.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				3878FA1F21949141001ABE4C /* UIADScrollView.swift */,
+				38F1AFF42199D6F800B0B7B1 /* UIAlertSheetView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F1AFF52199D6F800B0B7B1 /* UIAlertSheetView.swift in Sources */,
 				DF3168F42190588B0050F32E /* TAConstant.swift in Sources */,
 				38F1AFF32195DCB400B0B7B1 /* TANetwork.swift in Sources */,
 				DF83A9FD218C270E00F753CB /* UIViewController+Extension.m in Sources */,

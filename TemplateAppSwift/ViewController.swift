@@ -18,90 +18,18 @@ class ViewController: UIViewController {
         label.text = "this is a just label"
         self.view.addSubview(label)
         
-        
-//        TANetwork.sharedInstance.getReq(urlSuffix: nil, headers: nil, parameters: nil)?.resume()
-        
-        doit()
-    }
-
-    func doit() {
-        let jsonString = """
-{
-    "type":"fruit",
-    "size":{
-               "width":150,
-               "height":150
-           },
-    "title":"Apple",
-    "url":"https:\\/\\/www.fruits.com\\/apple",
-    "isSample":true,
-    "metaData":{
-                  "color":"green"
-               }
-}
-"""
-        if let jsonData = jsonString.data(using: .utf8)
-        {
-            let photoObject = try? JSONDecoder().decode(Photo.self, from: jsonData)
+        let view = UIView()
+        view.backgroundColor = .green
+        view.translatesAutoresizingMaskIntoConstraints = false
+        let cs = NSLayoutConstraint.init(item: view, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: 100)
+        view.addConstraint(cs)
+        UIAlertSheetView.showFrom(parentView: self.view, subview: view, style: .center){ (str) in
             
         }
     }
-}
 
-struct Photo: Codable
-{
-    //String, URL, Bool and Date conform to Codable.
-    var title: String
-    var url: URL
-    var isSample: Bool
     
-    //The Dictionary is of type [String:String] and String already conforms to Codable.
-    var metaData: [String:String]
-    
-    //PhotoType and Size are also Codable types
-    var type: PhotoType
-    var size: Size
 }
 
-struct Size: Codable
-{
-    var height: Double
-    var width: Double
-}
 
-enum PhotoType: String, Codable
-{
-    case flower
-    case animal
-    case fruit
-    case vegetable
-}
 
-//Encoding Example
-/*
-let photoObject = Photo(title: "Hibiscus", url: URL(string: "https://www.flowers.com/hibiscus")!, isSample: false, metaData: ["color" : "red"], type: .flower, size: Size(width: 200, height: 200))
-let encodedData = try? JSONEncoder().encode(photoObject)
-*/
-
-//Decoding Example
-/*
-let jsonString = """
-{
-"type":"fruit",
-"size":{
-"width":150,
-"height":150
-},
-"title":"Apple",
-"url":"https:\\/\\/www.fruits.com\\/apple",
-"isSample":true,
-"metaData":{
-"color":"green"
-}
-}
-"""
-if let jsonData = jsonString.data(using: .utf8)
-{
-    let photoObject = try? JSONDecoder().decode(Photo.self, from: jsonData)
-}
-*/
